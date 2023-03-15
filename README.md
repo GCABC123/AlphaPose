@@ -70,6 +70,8 @@ PROMOTIONAL MATERIAL FOR 𝗔𝗥𝗧𝗜𝗙𝗜𝗖𝗜𝗔𝗟 𝗜𝗡𝗧�
 
 
 ## News!
+- Nov 2022: [**AlphaPose paper**](http://arxiv.org/abs/2211.03375) is released! Checkout the paper for more details about this project.
+- Sep 2022: [**Jittor** version](https://github.com/tycoer/AlphaPose_jittor) of AlphaPose is released! It achieves 1.45x speed up with resnet50 backbone on the training stage.
 - July 2022: [**v0.6.0** version](https://github.com/MVIG-SJTU/AlphaPose) of AlphaPose is released! [HybrIK](https://github.com/Jeff-sjtu/HybrIK) for 3D pose and shape estimation is supported!
 - Jan 2022: [**v0.5.0** version](https://github.com/MVIG-SJTU/AlphaPose) of AlphaPose is released! Stronger whole body(face,hand,foot) keypoints! More models are availabel. Checkout [docs/MODEL_ZOO.md](docs/MODEL_ZOO.md)
 - Aug 2020: [**v0.4.0** version](https://github.com/MVIG-SJTU/AlphaPose) of AlphaPose is released! Stronger tracking! Include whole body(face,hand,foot) keypoints! [Colab](https://colab.research.google.com/drive/1c7xb_7U61HmeJp55xjXs24hf1GUtHmPs?usp=sharing) now available.
@@ -96,6 +98,7 @@ AlphaPose supports both Linux and **Windows!**
 <div align="center">
     <img src="docs/alphapose_136.gif", width="400"alt><br>
     <b><a href="https://github.com/Fang-Haoshu/Halpe-FullBody">Halpe 136 keypoints</a></b> + tracking
+    <b><a href="https://youtu.be/uze6chg-YeU">YouTube link</a></b><br>
 </div>
 <div align="center">
     <img src="docs/alphapose_hybrik_smpl.gif", width="400"alt><br>
@@ -153,7 +156,7 @@ Please check out [docs/INSTALL.md](docs/INSTALL.md)
 Please check out [docs/MODEL_ZOO.md](docs/MODEL_ZOO.md)
 
 ## Quick Start
-- **Colab**: We provide a [colab example](https://colab.research.google.com/drive/1c7xb_7U61HmeJp55xjXs24hf1GUtHmPs?usp=sharing) for your quick start.
+- **Colab**: We provide a [colab example](https://colab.research.google.com/drive/1_3Wxi4H3QGVC28snL3rHIoeMAwI2otMR?usp=sharing) for your quick start.
 
 - **Inference**: Inference demo
 ``` bash
@@ -222,6 +225,13 @@ We would really appreciate if you can offer any help and be the [contributor](do
 ## Citation
 Please cite these papers in your publications if it helps your research:
 
+    @article{alphapose,
+      author = {Fang, Hao-Shu and Li, Jiefeng and Tang, Hongyang and Xu, Chao and Zhu, Haoyi and Xiu, Yuliang and Li, Yong-Lu and Lu, Cewu},
+      journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+      title = {AlphaPose: Whole-Body Regional Multi-Person Pose Estimation and Tracking in Real-Time},
+      year = {2022}
+    }
+    
     @inproceedings{fang2017rmpe,
       title={{RMPE}: Regional Multi-person Pose Estimation},
       author={Fang, Hao-Shu and Xie, Shuqin and Tai, Yu-Wing and Lu, Cewu},
@@ -237,12 +247,7 @@ Please cite these papers in your publications if it helps your research:
         year={2019}
     }
 
-    @inproceedings{xiu2018poseflow,
-      author = {Xiu, Yuliang and Li, Jiefeng and Wang, Haoyu and Fang, Yinghong and Lu, Cewu},
-      title = {{Pose Flow}: Efficient Online Pose Tracking},
-      booktitle={BMVC},
-      year = {2018}
-    }
+If you used the 3D mesh reconstruction module, please also cite:
 
     @inproceedings{li2021hybrik,
         title={Hybrik: A hybrid analytical-neural inverse kinematics solution for 3d human pose and shape estimation},
@@ -251,6 +256,17 @@ Please cite these papers in your publications if it helps your research:
         pages={3383--3393},
         year={2021}
     }
+
+If you used the PoseFlow tracking module, please also cite:
+
+    @inproceedings{xiu2018poseflow,
+      author = {Xiu, Yuliang and Li, Jiefeng and Wang, Haoyu and Fang, Yinghong and Lu, Cewu},
+      title = {{Pose Flow}: Efficient Online Pose Tracking},
+      booktitle={BMVC},
+      year = {2018}
+    }
+
+
 
 
 

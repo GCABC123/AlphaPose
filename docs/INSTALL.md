@@ -23,7 +23,7 @@ conda create -n alphapose python=3.7 -y
 conda activate alphapose
 
 # 2. Install PyTorch
-conda install pytorch torchvision cudatoolkit=11.3 -c pytorch
+conda install pytorch torchvision torchaudio pytorch-cuda=11.3 -c pytorch -c nvidia 
 
 # 3. Get AlphaPose
 git clone https://github.com/MVIG-SJTU/AlphaPose.git
@@ -42,6 +42,11 @@ sudo apt-get install locales
 export LANG=C.UTF-8
 ######################################################
 python setup.py build develop
+
+# 5. Install PyTorch3D (Optional, only for visualization)
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath
+conda install -c bottler nvidiacub
+pip install git+ssh://git@github.com/facebookresearch/pytorch3d.git@stable
 ```
 
 #### Install with pip
@@ -61,6 +66,11 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64/:$LD_LIBRARY_PATH
 pip install cython
 sudo apt-get install libyaml-dev
 python3 setup.py build develop --user
+
+# 4. Install PyTorch3D (Optional, only for visualization)
+conda install -c fvcore -c iopath -c conda-forge fvcore iopath
+conda install -c bottler nvidiacub
+pip install git+ssh://git@github.com/facebookresearch/pytorch3d.git@stable
 ```
 
 #### Windows
